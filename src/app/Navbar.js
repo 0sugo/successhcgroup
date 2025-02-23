@@ -5,9 +5,9 @@ import logo from "@/images/clearLogo.jpg";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="">
       <Topbar />
-      <div className="navbar bg-white  rounded-t-3xl">
+      <div className="navbar bg-white ">
         <div className="navbar-start w-full">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
@@ -52,7 +52,7 @@ const Navbar = () => {
             </ul>
           </div>
           {/* <a className="btn btn-ghost text-xl hidden md:flex">SHCG</a> */}
-          <Image src={logo} alt="logo" width={50} height={50} />
+          <Image src={logo} alt="logo" width={80} height={80} />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
