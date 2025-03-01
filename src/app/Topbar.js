@@ -4,7 +4,7 @@ import React from "react";
 
 const Topbar = () => {
   return (
-    <div className="bg-[#0055C2] text-white rounded-b-lg shadow-lg">
+    <div className="bg-[#0055C2] text-white rounde shadow-lg">
       {/* Desktop View */}
       <div className="hidden md:flex justify-between items-center pt-4 pb-2 px-12 flex-nowrap">
         {/* Left: Social Icons */}
@@ -16,13 +16,11 @@ const Topbar = () => {
           <p className="border border-[#ed1352]" />
           <p className="flex gap-2 items-center">
             <Phone className="size-4" />
-            +61 567 890 890
+            +61 424 380 912
           </p>
           {/* <p className="bg-[#0055C2] p-2 text-white rounded-t-lg">Vacancies</p>
           <p className="bg-[#ed1352] p-2 text-white rounded-t-lg">Make an Enquiry</p> */}
-        </div>
-
-        
+        </div>        
 
         {/* Center: Marquee */}
         <div className="flex-1 text-center mx-4">
