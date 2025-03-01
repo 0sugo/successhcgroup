@@ -1,13 +1,14 @@
 import React from "react";
 import Topbar from "./Topbar";
 import Image from "next/image";
-import logo from "@/images/clearLogo.jpg";
-
+import ndisLogo from "@/images/ndisLogo.png";
+import logo from "@/images/sucessLogo.svg";
+import logod from "@/images/logod.svg";
 const Navbar = () => {
   return (
     <div className="">
-      <Topbar />
-      <div className="navbar bg-white ">
+      {/* <Topbar /> */}
+      <div className="navbar ">
         <div className="navbar-start w-full">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden ">
@@ -52,7 +53,8 @@ const Navbar = () => {
             </ul>
           </div>
           {/* <a className="btn btn-ghost text-xl hidden md:flex">SHCG</a> */}
-          <Image src={logo} alt="logo" width={80} height={80} />
+          <Image src={logod} alt="logo" width={100} height={100} />
+          <Image src={ndisLogo} alt="ndisLogo" width={50} height={50} />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -72,11 +74,12 @@ const Navbar = () => {
               <a>Jobs</a>
             </li>
 
-            <li>
+            {/* <li>
               <a>Contact Us</a>
-            </li>
+            </li> */}
           </ul>
         </div>
+        <button className="bg-primary text-white block rounded-lg min-w-fit p-2">Contact Us</button>
       </div>
     </div>
   );
