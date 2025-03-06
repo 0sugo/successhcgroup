@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import logo from "@/images/clearLogo.jpg";
 import localFont from "next/font/local";
 
 const rhoza = localFont({
@@ -22,7 +21,8 @@ const Footer = () => {
             </button>
           </div>
           <div className="relative col-span-2">
-          <Image src={logo} alt="logo" width={350} height={250} className="rounded-full absolute border-2 p-1 border-primary -top-36"/>
+          {/* <Image src={logo} alt="logo" width={350} height={250} className="rounded-full absolute border-2 p-1 border-primary -top-36"/> */}
+          <Image src="/clearLogo.jpg" alt="logo" width={350} height={250} className="rounded-full absolute border-2 p-1 border-primary -top-36"/>
           </div>
         </div>
 
