@@ -1,9 +1,7 @@
 import React from "react";
 import Topbar from "./Topbar";
 import Image from "next/image";
-import ndisLogo from "@/images/ndisLogo.png";
-import logo from "@/images/sucessLogo.svg";
-import logod from "@/images/logod.svg";
+
 const Navbar = () => {
   return (
     <div className="">
@@ -53,8 +51,8 @@ const Navbar = () => {
             </ul>
           </div>
           {/* <a className="btn btn-ghost text-xl hidden md:flex">SHCG</a> */}
-          <Image src={logod} alt="logo" width={100} height={100} />
-          <Image src={ndisLogo} alt="ndisLogo" width={50} height={50} />
+          <Image src="/logod.svg" alt="logo" width={100} height={100} />
+          <Image src="/ndisLogo.png" alt="ndisLogo" width={50} height={50} />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
