@@ -29,17 +29,17 @@ const Footer = () => {
         <div className="flex text-white justify-between text-sm">
           <div>
             <p className="text-[#e2e2e2]">Email</p>
-            <p>info@successhcgroup.com.absolute</p>
+            <p>info@successhcgroup.com</p>
           </div>
 
           <div>
             <p className="text-[#e2e2e2]">Phone</p>
-            <p>info@successhcgroup.com.absolute</p>
+            <p>info@successhcgroup.com</p>
           </div>
 
           <div>
             <p className="text-[#e2e2e2]">Address</p>
-            <p>info@successhcgroup.com.absolute</p>
+            <p>info@successhcgroup.com</p>
           </div>
         </div>
 
