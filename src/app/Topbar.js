@@ -16,7 +16,7 @@ const Topbar = () => {
           <p className="border border-[#ed1352]" />
           <p className="flex gap-2 items-center">
             <Phone className="size-4" />
-            0894179651
+            +61 (0) 894-179-651
           </p>
           {/* <p className="bg-[#0055C2] p-2 text-white rounded-t-lg">Vacancies</p>
           <p className="bg-[#ed1352] p-2 text-white rounded-t-lg">Make an Enquiry</p> */}
