@@ -10,11 +10,11 @@ import Footer from "./Footer";
 
 export default function Home() {
   return (
-    <div className={` bg-white`}>
-      <Topbar />
-      <div className="w-[90%] mx-auto space-y-14  ">
+    <div className={` bg-white overflow-x-hidden`}>
+      {/* <Topbar /> */}
+      <div className="w-[90%] mx-auto ">
         <div className="h-screen overflow-y-hidden">
-          <Navbar />
+          {/* <Navbar /> */}
           <Hero />
         </div>
         <Services />
