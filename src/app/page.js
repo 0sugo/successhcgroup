@@ -13,10 +13,7 @@ export default function Home() {
     <div className={` bg-white overflow-x-hidden`}>
       {/* <Topbar /> */}
       <div className="w-[90%] mx-auto ">
-        <div className="h-screen overflow-y-hidden">
-          {/* <Navbar /> */}
           <Hero />
-        </div>
         <Services />
         <About  />
         <Values />
