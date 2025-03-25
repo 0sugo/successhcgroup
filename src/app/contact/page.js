@@ -1,9 +1,16 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin, Clock, MessageSquare, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageSquare,
+  CheckCircle,
+} from "lucide-react";
 
 export default function Contact() {
   return (
@@ -13,9 +20,12 @@ export default function Contact() {
         <div className="absolute top-0 right-0 w-1/3 h-full bg-dots-pattern opacity-5 -z-10"></div>
 
         <div className="container mx-auto px-4 md:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">Get In Touch</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+            Get In Touch
+          </h1>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-            We're here to answer your questions and provide the support you need.
+            We're here to answer your questions and provide the support you
+            need.
           </p>
         </div>
       </section>
@@ -38,12 +48,18 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Phone</h3>
                       <p className="text-gray-700 mb-1">General Enquiries:</p>
-                      <a href="tel:+61123456789" className="text-[#0055C2] hover:underline">
-                        +61 (0) 123 456 789
+                      <a
+                        href="tel:+61123456789"
+                        className="text-[#0055C2] hover:underline"
+                      >
+                        +61 (0) 894-179-651
                       </a>
                       <p className="text-gray-700 mt-2 mb-1">Support Line:</p>
-                      <a href="tel:+61123456788" className="text-[#0055C2] hover:underline">
-                        +61 (0) 123 456 788
+                      <a
+                        href="tel:+61123456788"
+                        className="text-[#0055C2] hover:underline"
+                      >
+                        +61 (0) 894-179-651
                       </a>
                     </div>
                   </div>
@@ -55,11 +71,17 @@ export default function Contact() {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Email</h3>
                       <p className="text-gray-700 mb-1">General Enquiries:</p>
-                      <a href="mailto:info@successhcgroup.com" className="text-[#0055C2] hover:underline">
+                      <a
+                        href="mailto:info@successhcgroup.com"
+                        className="text-[#0055C2] hover:underline"
+                      >
                         info@successhcgroup.com
                       </a>
                       <p className="text-gray-700 mt-2 mb-1">Support:</p>
-                      <a href="mailto:support@successhcgroup.com" className="text-[#0055C2] hover:underline">
+                      <a
+                        href="mailto:support@successhcgroup.com"
+                        className="text-[#0055C2] hover:underline"
+                      >
                         support@successhcgroup.com
                       </a>
                     </div>
@@ -70,7 +92,9 @@ export default function Contact() {
                       <MapPin className="h-6 w-6 text-[#0055C2]" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Office Location</h3>
+                      <h3 className="text-lg font-semibold mb-1">
+                        Office Location
+                      </h3>
                       <p className="text-gray-700">
                         19 bluegrass, Treeby
                         <br />
@@ -86,7 +110,9 @@ export default function Contact() {
                       <Clock className="h-6 w-6 text-[#0055C2]" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">Office Hours</h3>
+                      <h3 className="text-lg font-semibold mb-1">
+                        Office Hours
+                      </h3>
                       <p className="text-gray-700">
                         Monday - Friday: 9:00 AM - 5:00 PM
                         <br />
@@ -133,7 +159,12 @@ export default function Contact() {
 
                       <div className="space-y-2">
                         <Label htmlFor="email">Email</Label>
-                        <Input id="email" type="email" placeholder="john.doe@example.com" required />
+                        <Input
+                          id="email"
+                          type="email"
+                          placeholder="john.doe@example.com"
+                          required
+                        />
                       </div>
 
                       <div className="space-y-2">
@@ -143,7 +174,11 @@ export default function Contact() {
 
                       <div className="space-y-2">
                         <Label htmlFor="subject">Subject</Label>
-                        <Input id="subject" placeholder="How can we help you?" required />
+                        <Input
+                          id="subject"
+                          placeholder="How can we help you?"
+                          required
+                        />
                       </div>
 
                       <div className="space-y-2">
@@ -156,7 +191,10 @@ export default function Contact() {
                         />
                       </div>
 
-                      <Button type="submit" className="w-full bg-[#0055C2] hover:bg-[#0055C2]/90 text-white">
+                      <Button
+                        type="submit"
+                        className="w-full bg-[#0055C2] hover:bg-[#0055C2]/90 text-white"
+                      >
                         Send Message
                       </Button>
                     </form>
@@ -165,7 +203,9 @@ export default function Contact() {
 
                 {/* Additional Contact Info */}
                 <div className="mt-8 bg-gray-50 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold mb-4">What Happens Next?</h3>
+                  <h3 className="text-lg font-semibold mb-4">
+                    What Happens Next?
+                  </h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-[#0055C2] mr-2 flex-shrink-0 mt-0.5" />
@@ -173,11 +213,17 @@ export default function Contact() {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-[#0055C2] mr-2 flex-shrink-0 mt-0.5" />
-                      <span>Our team will assess your needs and connect you with the right person</span>
+                      <span>
+                        Our team will assess your needs and connect you with the
+                        right person
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-[#0055C2] mr-2 flex-shrink-0 mt-0.5" />
-                      <span>We'll schedule a call or meeting to discuss how we can help</span>
+                      <span>
+                        We'll schedule a call or meeting to discuss how we can
+                        help
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -191,15 +237,21 @@ export default function Contact() {
       <section className="py-16 bg-gradient-to-r from-[#0055C2]/5 to-[#ED19A6]/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Need Immediate Assistance?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Need Immediate Assistance?
+            </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Our support team is available 24/7 to help with urgent matters related to your care.
+              Our support team is available 24/7 to help with urgent matters
+              related to your care.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button className="bg-[#0055C2] hover:bg-[#0055C2]/90 text-white rounded-full px-8 py-6 h-auto text-lg">
                 Call Support Line
               </Button>
-              <Button variant="outline" className="rounded-full px-8 py-6 h-auto text-lg">
+              <Button
+                variant="outline"
+                className="rounded-full px-8 py-6 h-auto text-lg"
+              >
                 View FAQs
               </Button>
             </div>
@@ -207,6 +259,5 @@ export default function Contact() {
         </div>
       </section>
     </div>
-  )
+  );
 }
-
