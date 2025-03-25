@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="relative pt-32 pb-16 bg-black text-[#E2E2D2]">
       {/* CTA Card */}
       <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl">
-        <div className="mx-4 rounded-3xl bg-gradient-to-r from-[#ed19a6] to-[#ED19A6] shadow-2xl overflow-hidden">
+        <div className="mx-4 rounded-3xl bg-[#0055c2] shadow-2xl overflow-hidden">
           <div className="relative px-6 py-12 md:p-12">
             {/* Background pattern */}
             <div className="absolute top-0 right-0 w-full h-full opacity-10">
@@ -30,9 +30,12 @@ const Footer = () => {
                   <br />
                   Feel free to contact
                 </h2>
-                <Button className="bg-[#E2E2D2] hover:bg-white/90 text-[#0055c2] font-semibold rounded-full px-8 py-6 h-auto">
+                <a href="/contact">
+
+                <Button className="bg-[#ED19A6] hover:bg-white/90 text-white font-semibold rounded-full px-8 py-6 h-auto">
                   GET IN TOUCH
                 </Button>
+                </a>
               </div>
 
               <div className="relative flex-shrink-0">
