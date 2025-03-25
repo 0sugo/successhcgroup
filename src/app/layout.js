@@ -19,6 +19,7 @@ const poppins = localFont({
 
 export const metadata = {
   metadataBase: new URL("https://successhcgroup.com.au/"),
+  icons: "/clearLogo.jpg",
   keywords: "Success Healthcare Group,Success,Successhcgroup,success group,Success healthcare, NDIS, Disability, Support, Services,staffing,staffing agency,NDIS provider,NDIS services,NDIS support,NDIS support coordination,NDIS support services,NDIS support worker,NDIS support workers,NDIS supports,NDIS therapy,NDIS training,NDIS transport,NDIS worker,NDIS workers,NDIS workshop,NDIS workshops,NDIS youth,NDIS youth services,NDIS youth support,NDIS youth support services,NDIS youth worker,NDIS youth workers,NDIS youth workshops,NDIS youth workshops",
   title:{
     default: "SuccessHealthcareGroup",
