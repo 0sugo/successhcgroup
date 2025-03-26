@@ -59,7 +59,7 @@ export default function Contact() {
                         href="tel:+61123456788"
                         className="text-[#0055C2] hover:underline"
                       >
-                        +61 (0) 894-179-651
+                        +61 (0) 447-095-046
                       </a>
                     </div>
                   </div>
@@ -72,17 +72,17 @@ export default function Contact() {
                       <h3 className="text-lg font-semibold mb-1">Email</h3>
                       <p className="text-gray-700 mb-1">General Enquiries:</p>
                       <a
-                        href="mailto:info@successhcgroup.com"
+                        href="mailto:info@successhcgroup.com.au"
                         className="text-[#0055C2] hover:underline"
                       >
-                        info@successhcgroup.com
+                        info@successhcgroup.com.au
                       </a>
                       <p className="text-gray-700 mt-2 mb-1">Support:</p>
                       <a
-                        href="mailto:support@successhcgroup.com"
+                        href="mailto:support@successhcgroup.com.au"
                         className="text-[#0055C2] hover:underline"
                       >
-                        support@successhcgroup.com
+                        info@successhcgroup.com.au
                       </a>
                     </div>
                   </div>
@@ -130,8 +130,14 @@ export default function Contact() {
                 {/* Map */}
                 <div className="mt-10 rounded-lg overflow-hidden shadow-md h-[300px] bg-gray-200">
                   <div className="w-full h-full flex items-center justify-center text-gray-500">
-                    <p>Map will be displayed here</p>
-                    {/* Replace with actual map integration */}
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211.17808821383562!2d115.87322037877449!3d-32.12736891603561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32977481d6b0b1%3A0x73e336760779ac62!2s19%20Bluegrass%20St%2C%20Treeby%20WA%206164%2C%20Australia!5e0!3m2!1sen!2ske!4v1742975103797!5m2!1sen!2ske"
+                      className="w-full h-full border-0"
+                      allowFullScreen={true}
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                    
                   </div>
                 </div>
               </div>
