@@ -46,7 +46,8 @@ export default function RootLayout({ children }) {
           <Navbar />
         </div>
         {children}
-        <ChatBubble />
+        {/* <ChatBubble /> */}
+        <elevenlabs-convai agent-id="aRLmOTy9tUkTkVvELKnr"></elevenlabs-convai><script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
       </body>
     </html>
   );
