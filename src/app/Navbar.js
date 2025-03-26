@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
+import { useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div className="sticky top-0 z-50 bg-white shadow-sm">
@@ -37,42 +37,56 @@ const Navbar = () => {
             <nav>
               <ul className="flex space-x-8">
                 <li>
-                  <a href="/" className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors">
+                  <a
+                    href="/"
+                    className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors">
+                  <a
+                    href="/about"
+                    className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+                  >
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="/services" className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors">
+                  <a
+                    href="/services"
+                    className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+                  >
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/jobs" className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors">
+                  <a
+                    href="/jobs"
+                    className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+                  >
                     Jobs
                   </a>
                 </li>
               </ul>
             </nav>
-            <a href="/jobs" >
-            <button className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-lg px-5 py-2 transition-colors">
-              Contact Us
-            </button>
+            <a href="/contact">
+              <button className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-lg px-5 py-2 transition-colors">
+                Contact Us
+              </button>
             </a>
           </div>
 
           {/* Mobile Navigation Button */}
           <div className="flex items-center lg:hidden">
-            <button
-              className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-lg px-4 py-2 mr-4 transition-colors text-sm"
-              aria-label="Contact Us"
-            >
-              Contact Us
-            </button>
+            <a href="/contact">
+              <button
+                className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-lg px-4 py-2 mr-4 transition-colors text-sm"
+                aria-label="Contact Us"
+              >
+                Contact Us
+              </button>
+            </a>
             <button
               onClick={toggleMenu}
               className="p-2 rounded-md hover:bg-gray-100 transition-colors"
@@ -86,9 +100,19 @@ const Navbar = () => {
                 stroke="currentColor"
               >
                 {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
@@ -98,13 +122,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden ${isMenuOpen ? "max-h-screen" : "max-h-0"} overflow-hidden transition-all duration-300 ease-in-out`}
+        className={`lg:hidden ${
+          isMenuOpen ? "max-h-screen" : "max-h-0"
+        } overflow-hidden transition-all duration-300 ease-in-out`}
       >
         <nav className="container mx-auto px-4 pb-5">
           <ul className="space-y-4 py-2">
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -113,7 +139,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/about"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -122,7 +148,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/services"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -131,7 +157,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="/jobs"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -142,8 +168,7 @@ const Navbar = () => {
         </nav>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;
