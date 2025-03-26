@@ -15,22 +15,24 @@ const Navbar = () => {
       <div className=" mx-auto">
         <div className="flex items-center justify-between py-4">
           {/* Logo Section */}
-          <div className="flex items-center space-x-3">
-            <Image
-              src="/logod.svg"
-              alt="Success Healthcare Group Logo"
-              width={120}
-              height={60}
-              className="h-auto w-[80px] sm:w-[100px] md:w-[120px]"
-            />
-            <Image
-              src="/ndisLogo.png"
-              alt="NDIS Logo"
-              width={50}
-              height={50}
-              className="h-auto w-[30px] sm:w-[40px] md:w-[50px]"
-            />
-          </div>
+          <a href="/">
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/logod.svg"
+                alt="Success Healthcare Group Logo"
+                width={120}
+                height={60}
+                className="h-auto w-[80px] sm:w-[100px] md:w-[120px]"
+              />
+              <Image
+                src="/ndisLogo.png"
+                alt="NDIS Logo"
+                width={50}
+                height={50}
+                className="h-auto w-[30px] sm:w-[40px] md:w-[50px]"
+              />
+            </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
