@@ -38,13 +38,13 @@ const Services = () => {
     {
       image: "/serviceSeven.jpg",
       title: "Level 2 Support Coordination",
-      description: "Coordinated support for complex needs",
+      description: "Coordinated support for any complex needs",
       icon: HandHelping,
     },
   ]
 
   return (
-    <div className="container mx-auto py-16 px-4 md:px-6">
+    <div className="container mx-auto py-16 px-12 md:px-6 relative overflow-hidden">
       {/* Header with decorative element */}
       <div className="relative mb-16">
         <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl -z-10"></div>
@@ -81,7 +81,7 @@ const Services = () => {
                 alt={service.title}
                 width={500}
                 height={300}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full max-w-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               {/* Icon overlay */}
               <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full shadow-md">
