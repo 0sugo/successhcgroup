@@ -10,7 +10,7 @@ const rhoza = localFont({
 
 const Footer = () => {
   return (
-    <footer className="relative pt-32 pb-16 bg-black text-[#E2E2D2]">
+    <footer className="relative pt-32 rounded-t-3xl pb-16 bg-black text-[#E2E2D2]">
       {/* CTA Card */}
       <div className="hidden md:block absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-5xl">
         <div className="mx-4 rounded-3xl bg-[#0055c2] shadow-2xl overflow-hidden">
