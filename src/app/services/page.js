@@ -96,7 +96,7 @@ export default function ServicesPage() {
     {
       question: "What areas do you service?",
       answer:
-        "We currently provide services throughout [Your Service Regions]. If you're unsure whether we cover your area, please contact us, and we'll be happy to discuss your location and service availability.",
+        "We currently provide services throughout Western Australia. If you're unsure whether we cover your area, please contact us, and we'll be happy to discuss your location and service availability.",
     },
     {
       question: "How do you ensure quality and safety in your services?",
