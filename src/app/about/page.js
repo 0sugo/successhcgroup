@@ -1,8 +1,8 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { CheckCircle, Users, Award, Heart, Clock, Shield } from "lucide-react"
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CheckCircle, Users, Award, Heart, Clock, Shield } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -22,11 +22,14 @@ export default function AboutPage() {
                 Empowering Lives Through Exceptional Care
               </h1>
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                Success Healthcare Group is dedicated to providing high-quality disability support services and
-                professional nursing care that enables individuals to live their best lives.
+                Success Healthcare Group is dedicated to providing high-quality
+                disability support services and professional nursing care that
+                enables individuals to live their best lives.
               </p>
               <div className="flex flex-wrap gap-4 pt-2">
-                <Button className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-full px-6">Our Services</Button>
+                <Button className="bg-[#0055c2] hover:bg-[#0055c2]/90 text-white rounded-full px-6">
+                  Our Services
+                </Button>
                 <Button variant="outline" className="rounded-full px-6">
                   Contact Us
                 </Button>
@@ -54,11 +57,14 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission & Vision</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Our Mission & Vision
+            </h2>
             <div className="h-1 w-20 bg-[#ed19a6] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Success Healthcare Group's mission is to deliver services guided by each person's aspirations for the life
-              they want to lead. We support individuals to be the best version of themselves.
+              Success Healthcare Group's mission is to deliver services guided
+              by each person's aspirations for the life they want to lead. We
+              support individuals to be the best version of themselves.
             </p>
           </div>
 
@@ -73,9 +79,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
                   <p className="text-gray-700 mb-6 flex-grow">
-                    To provide exceptional, person-centered disability support and nursing care that empowers
-                    individuals to achieve their goals, enhance their independence, and participate fully in their
-                    communities.
+                    To provide exceptional, person-centered disability support
+                    and nursing care that empowers individuals to achieve their
+                    goals, enhance their independence, and participate fully in
+                    their communities.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start">
@@ -105,8 +112,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
                   <p className="text-gray-700 mb-6 flex-grow">
-                    To be the leading provider of disability support and nursing services, recognized for excellence,
-                    innovation, and unwavering commitment to improving the lives of the people we serve.
+                    To be the leading provider of disability support and nursing
+                    services, recognized for excellence, innovation, and
+                    unwavering commitment to improving the lives of the people
+                    we serve.
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-start">
@@ -176,19 +185,27 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
               <div className="h-1 w-20 bg-[#ed19a6] mb-4 rounded-full"></div>
               <p className="text-gray-700 leading-relaxed">
-                Success Healthcare Group was founded with a clear vision: to transform the lives of people with
-                disabilities through exceptional care and support. Our journey began when our founder recognized the
-                need for a more personalized, compassionate approach to disability services.
+                Success Healthcare Group was founded with a clear vision: to
+                transform the lives of people with disabilities through
+                exceptional care and support. Our journey began when our founder
+                recognized the need for a more personalized, compassionate
+                approach to disability services.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Starting with a small team of dedicated registered nurses and support workers, we've grown into a
-                trusted provider of comprehensive disability support services. Throughout our growth, we've remained
-                committed to our core values of respect, integrity, and excellence.
+                Starting with a small team of dedicated registered nurses and
+                support workers, we've grown into a trusted provider of
+                comprehensive disability support services. Throughout our
+                growth, we've remained committed to our core values of respect,
+                integrity, and excellence.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Today, we're proud to be a registered NDIS provider, offering a wide range of services delivered by
-                highly qualified professionals who share our passion for making a positive difference in the lives of
-                the people we support.
+                Today, {"we're "}proud to be a registered NDIS provider,
+                offering a wide range of services delivered by highly qualified
+                professionals who share our passion for making a positive
+                difference in the lives of the people we support. In addition to
+                disability and nursing care, we also supply medical consumables,
+                first aid essentials, diagnostic treatment tools, and clinic
+                equipment to support both home-based and facility-level care.
               </p>
             </div>
           </div>
@@ -199,24 +216,30 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Us</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Why Choose Us
+            </h2>
             <div className="h-1 w-20 bg-[#ed19a6] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-gray-700">
-              At Success Healthcare Group, we stand apart through our unwavering commitment to quality, compassion, and
-              personalized care.
+              At Success Healthcare Group, we stand apart through our unwavering
+              commitment to quality, compassion, and personalized care.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-12"> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="p-6">
                 <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
                   <Users className="h-6 w-6 text-[#0055c2]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Qualified Professionals</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  Qualified Professionals
+                </h3>
                 <p className="text-gray-700">
-                  Our team consists of highly trained registered nurses and support workers with specialized experience
-                  in disability care.
+                  Our team consists of highly trained registered nurses and
+                  support workers with specialized experience in disability
+                  care.
                 </p>
               </CardContent>
             </Card>
@@ -228,47 +251,9 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">NDIS Registered</h3>
                 <p className="text-gray-700">
-                  As a registered NDIS provider, we meet rigorous quality and safety standards, ensuring you receive the
-                  highest level of care.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6">
-                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
-                  <Heart className="h-6 w-6 text-[#0055c2]" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Person-Centered Approach</h3>
-                <p className="text-gray-700">
-                  We tailor our services to your unique needs and goals, ensuring you're at the center of all decisions
-                  about your care.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6">
-                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
-                  <Clock className="h-6 w-6 text-[#0055c2]" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Reliable & Consistent</h3>
-                <p className="text-gray-700">
-                  We pride ourselves on dependability, ensuring your support is delivered consistently and according to
-                  schedule.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardContent className="p-6">
-                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
-                  <Award className="h-6 w-6 text-[#0055c2]" />
-                </div>
-                <h3 className="text-xl font-bold mb-3">Culturally Responsive</h3>
-                <p className="text-gray-700">
-                  As a CALD service provider, we offer culturally appropriate support that respects and celebrates
-                  diversity.
+                  As a registered NDIS provider, we meet rigorous quality and
+                  safety standards, ensuring you receive the highest level of
+                  care.
                 </p>
               </CardContent>
             </Card>
@@ -278,13 +263,76 @@ export default function AboutPage() {
                 <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
                   <CheckCircle className="h-6 w-6 text-[#0055c2]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Comprehensive Services</h3>
+                <h3 className="text-xl font-bold mb-3">Medical Supplies</h3>
                 <p className="text-gray-700">
-                  From nursing care to community access and accommodation support, we offer a full spectrum of
-                  disability services.
+                  We supply a range of medical consumables, first aid kits,
+                  diagnostic tools, and clinic equipment to support hospitals,
+                  clinics, and homecare settings.
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
+                  <Heart className="h-6 w-6 text-[#0055c2]" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  Person-Centered Approach
+                </h3>
+                <p className="text-gray-700">
+                  We tailor our services to your unique needs and goals,
+                  ensuring you're at the center of all decisions about your
+                  care.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
+                  <Clock className="h-6 w-6 text-[#0055c2]" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  Reliable & Consistent
+                </h3>
+                <p className="text-gray-700">
+                  We pride ourselves on dependability, ensuring your support is
+                  delivered consistently and according to schedule.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
+                  <Award className="h-6 w-6 text-[#0055c2]" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  Culturally Responsive
+                </h3>
+                <p className="text-gray-700">
+                  As a CALD service provider, we offer culturally appropriate
+                  support that respects and celebrates diversity.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* <Card className="border-0 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardContent className="p-6">
+                <div className="bg-[#0055c2]/10 rounded-full p-3 w-fit mb-6">
+                  <CheckCircle className="h-6 w-6 text-[#0055c2]" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  Comprehensive Services
+                </h3>
+                <p className="text-gray-700">
+                  From nursing care to community access and accommodation
+                  support, we offer a full spectrum of disability services.
+                </p>
+              </CardContent>
+            </Card> */}
+            
           </div>
         </div>
       </section>
@@ -293,10 +341,13 @@ export default function AboutPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Leadership Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Our Leadership Team
+            </h2>
             <div className="h-1 w-20 bg-[#ed19a6] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-gray-700">
-              Meet the dedicated professionals who lead our organization with expertise and compassion.
+              Meet the dedicated professionals who lead our organization with
+              expertise and compassion.
             </p>
           </div>
 
@@ -313,10 +364,13 @@ export default function AboutPage() {
                 </div>
                 <CardContent className="p-6 text-center">
                   <h3 className="text-xl font-bold mb-1">Josephine Mochama</h3>
-                  <p className="text-[#0055c2] font-medium mb-3">Chief Executive Officer</p>
+                  <p className="text-[#0055c2] font-medium mb-3">
+                    Chief Executive Officer
+                  </p>
                   <p className="text-gray-700 text-sm">
-                    With over 10 years of experience in disability services and healthcare management, Joe leads our
-                    team with vision and compassion.
+                    With over 10 years of experience in disability services and
+                    healthcare management, Joe leads our team with vision and
+                    compassion.
                   </p>
                 </CardContent>
               </Card>
@@ -329,7 +383,9 @@ export default function AboutPage() {
       <section className="py-16 bg-gradient-to-br from-[#0055c2]/5 to-[#ed19a6]/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">What Our Clients Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              What Our Clients Say
+            </h2>
             <div className="h-1 w-20 bg-[#ed19a6] mx-auto mb-8 rounded-full"></div>
           </div>
 
@@ -340,15 +396,21 @@ export default function AboutPage() {
                   <div className="flex flex-col h-full">
                     <div className="mb-6 flex">
                       {[1, 2, 3, 4, 5].map((star) => (
-                        <svg key={star} className="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                        <svg
+                          key={star}
+                          className="h-5 w-5 text-yellow-400 fill-current"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                         </svg>
                       ))}
                     </div>
                     <p className="text-gray-700 italic mb-6 flex-grow">
-                      "Success Healthcare Group has made an incredible difference in our lives. The support workers are
-                      professional, caring, and have become like family. My daughter's confidence and independence have
-                      grown tremendously."
+                      "Success Healthcare Group has made an incredible
+                      difference in our lives. The support workers are
+                      professional, caring, and have become like family. My
+                      daughter's confidence and independence have grown
+                      tremendously."
                     </p>
                     <div className="flex items-center">
                       <div className="w-12 h-12 rounded-full bg-gray-200 mr-4 overflow-hidden">
@@ -362,7 +424,9 @@ export default function AboutPage() {
                       </div>
                       <div>
                         <h4 className="font-bold">Sarah Johnson</h4>
-                        <p className="text-sm text-gray-600">Parent of NDIS Participant</p>
+                        <p className="text-sm text-gray-600">
+                          Parent of NDIS Participant
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -377,9 +441,12 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#0055c2] to-[#0055c2]/80 rounded-2xl p-8 md:p-12 shadow-xl text-white text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Experience Exceptional Care?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ready to Experience Exceptional Care?
+            </h2>
             <p className="text-lg md:text-xl mb-8 opacity-90">
-              Contact us today to learn how Success Healthcare Group can support you or your loved one.
+              Contact us today to learn how Success Healthcare Group can support
+              you or your loved one.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button className="bg-white text-[#0055c2] hover:bg-white/90 rounded-full px-8 py-6 h-auto text-lg">
@@ -396,5 +463,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
