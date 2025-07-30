@@ -189,7 +189,7 @@ const Services = () => {
       title: "Medical Supplies & Equipment",
       description:
         "We supply a wide range of high-quality medical consumables, diagnostic equipment, and clinical tools. All products are reliable, affordable, and NDIS-compliant for healthcare facilities and home use.",
-      image: "/serviceTwo.jpg",
+      image: "/try2.png",
       icon: Clipboard,
       badge: "NDIS Compliant Products",
       features: [
