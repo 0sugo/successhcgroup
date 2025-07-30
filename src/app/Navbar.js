@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
       <div className=" mx-auto">
         <div className="flex items-center justify-between py-4">
           {/* Logo Section */}
-          <a href="/">
+          <Link href="/">
             <div className="flex items-center space-x-3">
               <Image
                 src="/logod.svg"
@@ -32,43 +33,51 @@ const Navbar = () => {
                 className="h-auto w-[30px] sm:w-[40px] md:w-[50px]"
               />
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             <nav>
               <ul className="flex space-x-8">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                   href="/"
                     className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
+                    href="/store"
+                    className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+                  >
+                    Store
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/about"
                     className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
                   >
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/services"
                     className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/jobs"
                     className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
                   >
                     Jobs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -131,40 +140,48 @@ const Navbar = () => {
         <nav className="container mx-auto px-4 pb-5">
           <ul className="space-y-4 py-2">
             <li>
-              <a
+              <Link
                 href="/"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                href="/store"
+                className="text-gray-700 hover:text-[#0055c2] font-medium transition-colors"
+              >
+                Store
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/about"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/jobs"
                 className="block py-2 px-4 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2] rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Jobs
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
