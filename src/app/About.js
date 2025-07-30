@@ -5,7 +5,7 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Mitchell",
+      name: "Alice Gray ",
       role: "NDIS Participant",
       location: "Perth, WA",
       rating: 5,
@@ -17,7 +17,7 @@ const Reviews = () => {
     },
     {
       id: 2,
-      name: "Dr. James Chen",
+      name: "Dr. Peter Martin",
       role: "Facility Manager",
       location: "Royal Perth Hospital",
       rating: 5,
@@ -29,7 +29,7 @@ const Reviews = () => {
     },
     {
       id: 3,
-      name: "Margaret Thompson",
+      name: "Sonia Peterson",
       role: "Family Member",
       location: "Fremantle, WA",
       rating: 5,
@@ -99,7 +99,7 @@ const Reviews = () => {
 
                 {/* Review Text */}
                 <p className="text-gray-700 leading-relaxed mb-6 text-sm">
-                  "{review.review}"
+                  &quot;{review.review}&quot;
                 </p>
 
                 {/* Reviewer Info */}
