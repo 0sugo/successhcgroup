@@ -380,7 +380,7 @@ export default function AboutPage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gradient-to-br from-[#0055c2]/5 to-[#ed19a6]/5">
+      {/* <section className="py-16 bg-gradient-to-br from-[#0055c2]/5 to-[#ed19a6]/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -435,7 +435,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-white">
