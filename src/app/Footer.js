@@ -1,12 +1,21 @@
-import Image from "next/image"
-import localFont from "next/font/local"
-import { Button } from "@/components/ui/button"
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Heart } from "lucide-react"
-import Link from "next/link"
+import Image from "next/image";
+import localFont from "next/font/local";
+import { Button } from "@/components/ui/button";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Twitter,
+  Linkedin,
+  Heart,
+} from "lucide-react";
+import Link from "next/link";
 
 const rhoza = localFont({
   src: "/fonts/RozhaOne-Regular.ttf",
-})
+});
 
 const Footer = () => {
   return (
@@ -31,10 +40,9 @@ const Footer = () => {
                   Feel free to contact
                 </h2>
                 <a href="/contact">
-
-                <Button className="bg-[#ED19A6] hover:bg-white/90 text-white font-semibold rounded-full px-8 py-6 h-auto">
-                  GET IN TOUCH
-                </Button>
+                  <Button className="bg-[#ED19A6] hover:bg-white/90 text-white font-semibold rounded-full px-8 py-6 h-auto">
+                    GET IN TOUCH
+                  </Button>
                 </a>
               </div>
 
@@ -58,24 +66,39 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           {/* Company Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-[#E2E2D2]/90">Success Healthcare</h3>
+            <h3 className="text-xl font-bold text-[#E2E2D2]/90">
+              Success Healthcare
+            </h3>
             <p className="text-[#E2E2D2]/70 max-w-xs">
-              Providing compassionate care and support services to help individuals live their best lives.
+              Providing compassionate care and support services to help
+              individuals live their best lives.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+              <Link
+                href="#"
+                className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+              >
                 <Facebook size={20} />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+              <Link
+                href="#"
+                className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+              >
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+              <Link
+                href="#"
+                className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+              >
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+              <Link
+                href="#"
+                className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+              >
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -102,7 +125,10 @@ const Footer = () => {
                 <Phone className="mr-3 h-5 w-5 text-[#ed19a6] flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-[#E2E2D2]/50 text-sm">Phone</p>
-                  <a href="tel:+61123456789" className="text-[#E2E2D2] hover:text-[#ed19a6] transition-colors">
+                  <a
+                    href="tel:+61123456789"
+                    className="text-[#E2E2D2] hover:text-[#ed19a6] transition-colors"
+                  >
                     +61 (0) 894 179 651
                   </a>
                 </div>
@@ -126,27 +152,42 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-[#E2E2D2]/90">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+                <Link
+                  href="/about"
+                  className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+                <Link
+                  href="/services"
+                  className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+                >
                   Our Services
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+                <Link
+                  href="/testimonials"
+                  className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+                >
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+                <Link
+                  href="/careers"
+                  className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors">
+                <Link
+                  href="/contact"
+                  className="text-[#E2E2D2]/70 hover:text-[#ed19a6] transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -156,14 +197,18 @@ const Footer = () => {
           {/* Newsletter */}
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-[#E2E2D2]/90">Newsletter</h3>
-            <p className="text-[#E2E2D2]/70">Subscribe to our newsletter for updates and insights.</p>
+            <p className="text-[#E2E2D2]/70">
+              Subscribe to our newsletter for updates and insights.
+            </p>
             <div className="flex">
               <input
                 type="email"
                 placeholder="Your email"
                 className="bg-white/10 rounded-l-lg px-4 py-2 w-full focus:outline-none focus:ring-1 focus:ring-[#ed19a6]"
               />
-              <Button className="bg-[#ed19a6] hover:bg-[#ed19a6]/90 rounded-r-lg rounded-l-none">Subscribe</Button>
+              <Button className="bg-[#ed19a6] hover:bg-[#ed19a6]/90 rounded-r-lg rounded-l-none">
+                Subscribe
+              </Button>
             </div>
           </div>
         </div>
@@ -175,15 +220,19 @@ const Footer = () => {
         <div className="text-center text-[#E2E2D2]/50 text-sm">
           <p>
             Copyright © 2025 Success Healthcare Group | Made with{" "}
-            <Heart className="inline-block h-4 w-4 text-[#ed19a6] fill-[#ed19a6]" /> by{" "}
-            <a href="https://successhcgroup.com.au" className="text-[#ed19a6] hover:underline">
-              successhcgroup.com.au
+            <Heart className="inline-block h-4 w-4 text-[#ed19a6] fill-[#ed19a6]" />{" "}
+            by{" "}
+            <a
+              href="mailto:josugo38@gmail.com"
+              className="text-[#ed19a6] hover:underline"
+            >
+              Osugo
             </a>
           </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
