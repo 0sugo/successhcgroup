@@ -62,8 +62,8 @@ export default function AboutPage() {
             </h2>
             <div className="h-1 w-20 bg-[#ed19a6] mx-auto mb-8 rounded-full"></div>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Success Healthcare Group's mission is to deliver services guided
-              by each person's aspirations for the life they want to lead. We
+              Success Healthcare {"Group's"} mission is to deliver services guided
+              by each {"person's"} aspirations for the life they want to lead. We
               support individuals to be the best version of themselves.
             </p>
           </div>
@@ -193,9 +193,9 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Starting with a small team of dedicated registered nurses and
-                support workers, we've grown into a trusted provider of
+                support workers, {"we've"} grown into a trusted provider of
                 comprehensive disability support services. Throughout our
-                growth, we've remained committed to our core values of respect,
+                growth, {"we've"} remained committed to our core values of respect,
                 integrity, and excellence.
               </p>
               <p className="text-gray-700 leading-relaxed">
@@ -282,7 +282,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-gray-700">
                   We tailor our services to your unique needs and goals,
-                  ensuring you're at the center of all decisions about your
+                  ensuring{" you're"} at the center of all decisions about your
                   care.
                 </p>
               </CardContent>
