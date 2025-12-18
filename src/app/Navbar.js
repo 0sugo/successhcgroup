@@ -272,7 +272,7 @@ const Navbar = () => {
                     About Us
                   </Link>
                 </li>
-                {/* <li className="relative group">
+                <li className="relative group">
                   <button
                     className="text-gray-900 hover:text-[#0055c2] font-medium transition-colors flex items-center"
                     onMouseEnter={() => setIsServicesOpen(true)}
@@ -296,6 +296,7 @@ const Navbar = () => {
                       />
                     </svg>
                   </button>
+                  {/* Dropdown Menu */}
                   <div
                     className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 ${
                       isServicesOpen ? "block" : "hidden"
@@ -313,57 +314,7 @@ const Navbar = () => {
                       </Link>
                     ))}
                   </div>
-                </li> */}
-
-
-                <li
-  className="relative group"
-  onMouseEnter={() => setIsServicesOpen(true)}
-  onMouseLeave={() => setIsServicesOpen(false)}
->
-  <Link
-    href="/services"
-    className="text-gray-900 hover:text-[#0055c2] font-medium transition-colors flex items-center"
-  >
-    Services
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className={`h-4 w-4 ml-1 transition-transform ${
-        isServicesOpen ? "rotate-180" : ""
-      }`}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M19 9l-7 7-7-7"
-      />
-    </svg>
-  </Link>
-
-  {/* Dropdown */}
-  <div
-    className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 ${
-      isServicesOpen ? "block" : "hidden"
-    }`}
-  >
-    {serviceItems.map((item, index) => (
-      <Link
-        key={index}
-        href={item.href}
-        className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#0055c2]"
-      >
-        {item.name}
-      </Link>
-    ))}
-  </div>
-</li>
-
-
-
+                </li>
                 <li>
                   <Link
                     href="/jobs"
@@ -459,7 +410,7 @@ const Navbar = () => {
                 About Us
               </Link>
             </li>
-            {/* <li>
+            <li>
               <div>
                 <button
                   onClick={toggleServices}
@@ -483,7 +434,7 @@ const Navbar = () => {
                     />
                   </svg>
                 </button>
-                
+                {/* Mobile Dropdown */}
                 <div
                   className={`${
                     isServicesOpen ? "max-h-96" : "max-h-0"
@@ -507,67 +458,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </div>
-            </li> */}
-
-            <li>
-  <div className="flex items-center justify-between">
-    <Link
-      href="/services"
-      className="flex-1 py-2 px-4 text-gray-700 hover:text-[#0055c2]"
-      onClick={() => setIsMenuOpen(false)}
-    >
-      Services
-    </Link>
-
-    <button
-      onClick={toggleServices}
-      className="px-4 py-2"
-      aria-label="Toggle services submenu"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className={`h-4 w-4 transition-transform ${
-          isServicesOpen ? "rotate-180" : ""
-        }`}
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M19 9l-7 7-7-7"
-        />
-      </svg>
-    </button>
-  </div>
-
-  {/* Mobile Dropdown */}
-  <div
-    className={`${
-      isServicesOpen ? "max-h-96" : "max-h-0"
-    } overflow-hidden transition-all duration-300`}
-  >
-    <ul className="pl-6 mt-2 space-y-2">
-      {serviceItems.map((item, index) => (
-        <li key={index}>
-          <Link
-            href={item.href}
-            className="block py-2 px-4 text-gray-500 hover:text-[#0055c2] text-sm"
-            onClick={() => {
-              setIsMenuOpen(false);
-              setIsServicesOpen(false);
-            }}
-          >
-            {item.name}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-</li>
-
+            </li>
             <li>
               <Link
                 href="/jobs"
