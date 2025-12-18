@@ -24,7 +24,7 @@ const Hero = () => {
         <h1
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#E2E2D2] font-semibold ${rhoza.className}`}
         >
-          NDIS <br /> Disability <br /> Supporty
+          NDIS <br /> Disability <br /> Support
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl">
           Making Lives Better for People with Disabilities
