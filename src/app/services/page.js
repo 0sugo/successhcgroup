@@ -497,7 +497,7 @@ export default function ServicesPage() {
                       Self-Managed
                     </h3>
                     <p className="text-gray-700">
-                      If you self-manage your funding, we'll provide invoices
+                      If you self-manage your funding, {"we'll "}provide invoices
                       for you to submit for reimbursement.
                     </p>
                   </div>
