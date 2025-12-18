@@ -23,6 +23,7 @@ import {
   Clock,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function ServicesPage() {
   const services = [
@@ -37,7 +38,7 @@ export default function ServicesPage() {
     },
     {
       id: "supplies",
-      icon: Clipboard, 
+      icon: Clipboard,
       title: "Medical Supplies & Equipment",
       shortDesc: "Supplying consumables, diagnostics, and clinical tools",
       description:
@@ -81,7 +82,6 @@ export default function ServicesPage() {
         "Our community access support helps you engage with your community, pursue interests, and develop social connections. We provide transportation, companionship, and practical assistance to help you participate in activities, events, and programs that matter to you.",
       image: "/servicefive.jpg",
     },
-    
   ];
 
   const faqs = [
@@ -118,6 +118,15 @@ export default function ServicesPage() {
         "We understand that circumstances change. We ask for reasonable notice for schedule changes or cancellations, typically 24-48 hours when possible. Please refer to your service agreement for specific cancellation policies or contact our office for assistance.",
     },
   ];
+  const serviceRouteMap = {
+    "High Intensity Daily Personal Activities":
+      "/High-Intensity-Daily-Personal-Activities",
+    "Community Nursing": "/Community-Nursing",
+    "Medical Supplies & Equipment": "/Medical-Supplies-&-Equipment",
+    "Behaviour Support": "/Behaviour-Support",
+    "Accommodation SIL/MTA/STA": "/Accommodation-SIL-MTA-STA",
+    "Community Access": "/Community-Access",
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -177,13 +186,13 @@ export default function ServicesPage() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                   <p className="text-gray-700 mb-4">{service.shortDesc}</p>
-                  <Button
-                    variant="ghost"
-                    className="group p-0 hover:bg-transparent text-[#0055c2]"
+                  <Link
+                    href={serviceRouteMap[service.title] || "/services"}
+                    className="inline-flex items-center group text-[#0055c2]"
                   >
                     <span>Learn more</span>
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -497,8 +506,8 @@ export default function ServicesPage() {
                       Self-Managed
                     </h3>
                     <p className="text-gray-700">
-                      If you self-manage your funding, {"we'll "}provide invoices
-                      for you to submit for reimbursement.
+                      If you self-manage your funding, {"we'll "}provide
+                      invoices for you to submit for reimbursement.
                     </p>
                   </div>
                 </div>
@@ -570,5 +579,3 @@ export default function ServicesPage() {
     </div>
   );
 }
-
-
