@@ -42,13 +42,13 @@ export default function ServicesPage() {
       shortDesc: "Supplying consumables, diagnostics, and clinical tools",
       description:
         "We supply a wide range of high-quality medical consumables, first aid kits, diagnostic treatment devices, and clinic equipment. Whether for home use, clinics, or aged care facilities, our products are reliable, affordable, and NDIS-compliant.",
-      image: "/serviceTwo.jpg",
+      image: "/serviceThree.jpg",
     },
 
     {
       id: "Daily Personal Activities",
       icon: Heart,
-      title: "Daily Personal Activities",
+      title: "High Intensity Daily Personal Activities",
       shortDesc: "Support with everyday personal care needs",
       description:
         "We provide assistance with personal hygiene, dressing, meal preparation, and other daily living activities. Our support workers are trained to provide respectful, dignified care that promotes independence while ensuring your needs are met.",
